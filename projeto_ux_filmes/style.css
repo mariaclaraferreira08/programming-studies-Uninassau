@@ -1,0 +1,161 @@
+/* ================= BÁSICO ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= ESTILO GERAL ================= */
+
+body{
+    background:#111;
+    color:white;
+    line-height:1.6;
+}
+
+
+/* ================= CABEÇALHO ================= */
+
+header{
+    background:#1f1f1f;
+    padding:30px;
+    text-align:center;
+}
+
+header h1{
+    font-size:2.5rem;
+}
+
+
+/* ================= MENU de Navegação ================= */
+
+nav{
+    background:#000;
+    padding:10px;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffcc00;
+}
+
+
+/* ================= MAIN ================= */
+
+main{
+    padding:40px;
+}
+
+section{
+    margin-bottom:60px;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+
+/* ================= GRID DE FILMES ================= */
+
+.container-filmes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+
+/* ================= CARD DE FILME ================= */
+
+.filme{
+    background:#1c1c1c;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.filme img{
+    width:100%;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+.filme button{
+    margin-top:10px;
+    padding:10px;
+    border:none;
+    background:#ffcc00;
+    color:black;
+    font-weight:bold;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.filme button:hover{
+    background:#e6b800;
+}
+
+
+/* ================ FOMULARIO ================= */
+
+form{
+    display:flex;
+    flex-direction:column;
+    max-width:400px;
+    gap:10px;
+}
+
+input,
+select,
+textarea{
+    padding:10px;
+    border:none;
+    border-radius:5px;
+}
+
+button[type="submit"]{
+    background:#ffcc00;
+    border:none;
+    padding:10px;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:6px;
+}
+
+button[type="submit"]:hover{
+    background:#e6b800;
+}
+
+
+/* ================= COMENTÁRIOS ================= */
+
+.comentario{
+    background:#1c1c1c;
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:10px;
+}
+
+
+/* ================= RODAPÉ ================= */
+
+footer{
+    background:#000;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}

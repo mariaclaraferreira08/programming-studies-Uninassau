@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AvaliaFlix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= Cabeçalho ================= -->
+    <!-- Cabeçalho principal do site -->
+    <header>
+
+        <h1>🎬 AvaliaFlix</h1>
+        <p>Avalie filmes e séries antes de assistir</p>
+
+    </header>
+
+    <!-- ================= Menu ================= -->
+    <!-- Menu de navegação para as seções da página -->
+    <nav>
+
+        <ul>
+            <li>
+                <a href="#filmes">Filmes</a>
+            </li>
+
+            <li>
+                <a href="#avaliar">Avaliar</a>
+            </li>
+
+            <li>
+                <a href="#comentarios">Comentários</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
+    <main>
+
+        <!-- ================= SEÇÃO DE FILMES ================= -->
+        <section id="filmes">
+
+            <h2>Filmes Populares</h2>
+
+            <!-- Guarda todos os cards de filmes -->
+            <div class="container-filmes">
+
+                <!-- Card de filme -->
+                <article class="filme">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.IqW4RLmFIbOmkxvUVsDRogHaLH?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Capa do filme Interestelar">
+                    <h3>Interestelar</h3>
+                    <p>⭐ Nota média: 4.8</p>
+                    <button>Avaliar</button>
+                </article>
+
+                <article class="filme">
+                    <img src="https://strapi.api-tvcine.com/uploads/61e002fd3a4249e6ba684bbe83d90fa7.jpg" alt="Capa do filme Batman">
+                    <h3>The Batman</h3>
+                    <p>⭐ Nota média: 4.5</p>
+                    <button>Avaliar</button>
+                </article>
+
+                <article class="filme">
+                    <img src="https://i.pinimg.com/736x/d9/7c/76/d97c76380d913c60bdb7a912a567a1de.jpg" alt="Capa do filme Duna">
+                    <h3>Duna</h3>
+                    <p>⭐ Nota média: 4.6</p>
+                    <button>Avaliar</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ================= SEÇÃO DE AVALIAÇÃO ================= -->
+        <section id="avaliar">
+            <h2>Avalie um Filme</h2>
+
+            <!-- Formulário de avaliação -->
+            <form>
+                <!-- Usuario -->
+                <label for="nome">Seu nome</label>
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                >
+
+                <!-- Nome do filme -->
+                <label for="filme">Filme ou série</label>
+
+                <input
+                    type="text"
+                    id="filme"
+                    placeholder="Digite o nome do filme"
+                >
+
+                <!-- Campo para dar nota -->
+                <label for="nota">Nota</label>
+                <select id="nota">
+                    <option>⭐ 1</option>
+                    <option>⭐ 2</option>
+                    <option>⭐ 3</option>
+                    <option>⭐ 4</option>
+                    <option>⭐ 5</option>
+                </select>
+
+                <!-- Campo para deixar um comentário -->
+                <label for="comentario">Comentário</label>
+
+                <textarea
+                    id="comentario"
+                    rows="4"
+                    placeholder="Escreva sua opinião"
+                ></textarea>
+
+                <!-- Botão de envio -->
+                <button type="submit">
+                    Enviar avaliação
+                </button>
+            </form>
+        </section>
+
+<!-- ================= SEÇÃO DE COMENTÁRIOS ================= -->
+        <section id="comentarios">
+
+            <h2>Comentários Recentes</h2>
+            <article class="comentario">
+
+                <h4>Ana</h4>
+
+                <p>
+                    Interestelar é simplesmente incrível.
+                    Um dos melhores filmes que já vi.
+                </p>
+
+            </article>
+
+            <article class="comentario">
+                <h4>Lucas</h4>
+                <p>
+                    Duna tem uma fotografia maravilhosa
+                    e uma história muito interessante.
+                </p>
+            </article>
+
+            <article class="comentario">
+                <h4>Marina</h4>
+                <p>
+                    The Batman é bem diferente das outras versões
+                    e muito mais sombrio.
+                </p>
+            </article>
+        </section>
+    </main>
+
+    <!-- ================= RODAPÉ ================= -->
+    <!-- Rodapé do site -->
+    <footer>
+        <p>Sobre o AvaliaFlix</p>
+        <p>
+            O AvaliaFlix é um site criado para ajudar
+            pessoas a descobrir filmes e séries
+            bem avaliados de forma rápida.
+        </p>
+
+        <p>By Maria Clara F. Alves</p>
+
+    </footer>
+
+</body>
+
+</html>
